@@ -119,7 +119,6 @@ BOARD_SEPOLICY_UNION += \
        hostapd.te \
        irsc_util.te \
        mediaserver.te \
-       mflinger.te \
        mpdecision.te \
        netmgrd.te \
        platform_app.te \
@@ -137,6 +136,10 @@ BOARD_SEPOLICY_UNION += \
        ueventd.te \
        vss.te \
        wpa.te \
+       perspectived.te \
+       maru_init.te \
+       mflinger.te \
+       maru_files.te \
        file_contexts \
        genfs_contexts \
        te_macros

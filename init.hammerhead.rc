@@ -17,6 +17,7 @@
 import init.hammerhead.usb.rc
 import init.hammerhead_svelte.rc
 import init.hammerhead.diag.rc
+import init.maru.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -466,9 +467,3 @@ service time_daemon /system/bin/time_daemon
     class late_start
     user root
     group root
-
-service mflinger /system/bin/mflinger
-    class main
-    user graphics
-    group graphics
-    oneshot

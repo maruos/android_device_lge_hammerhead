@@ -1,0 +1,3 @@
+# maru specific file types
+
+type maru_file, file_type;

@@ -120,8 +120,6 @@
 /system/bin/time_daemon            u:object_r:time_exec:s0
 /system/bin/irsc_util              u:object_r:irsc_util_exec:s0
 
-/system/bin/mflinger               u:object_r:mflinger_exec:s0
-
 # Persist firmware filesystem
 /persist(/.*)?                    u:object_r:persist_file:s0
 /persist/bluetooth(/.*)?          u:object_r:persist_bluetooth_file:s0
@@ -153,3 +151,11 @@
 
 # Thermal engine
 /dev/msm_thermal_query            u:object_r:thermal_engine_device:s0
+
+# maru
+/system/bin/mflinger               u:object_r:mflinger_exec:s0
+/system/bin/perspectived           u:object_r:perspectived_exec:s0
+/system/xbin/mcontainer-start.sh   u:object_r:maru_init_exec:s0
+
+/data/maru(/.*)?                   u:object_r:maru_file:s0
+/cache/lxc(/.*)?                   u:object_r:maru_file:s0
