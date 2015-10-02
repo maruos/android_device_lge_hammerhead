@@ -1,0 +1,2 @@
+# register mperspective as a service
+PerspectiveService                              u:object_r:mperspective_service:s0

@@ -136,13 +136,18 @@ BOARD_SEPOLICY_UNION += \
        ueventd.te \
        vss.te \
        wpa.te \
+       file_contexts \
+       genfs_contexts \
+       te_macros
+
+# maru: new selinux policies
+BOARD_SEPOLICY_UNION += \
+       service.te \
        perspectived.te \
        maru_init.te \
        mflinger.te \
        maru_files.te \
-       file_contexts \
-       genfs_contexts \
-       te_macros
+       service_contexts
 
 HAVE_ADRENO_SOURCE:= false
 

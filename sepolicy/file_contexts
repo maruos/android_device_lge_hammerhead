@@ -155,7 +155,6 @@
 # maru
 /system/bin/mflinger               u:object_r:mflinger_exec:s0
 /system/bin/perspectived           u:object_r:perspectived_exec:s0
-/system/xbin/mcontainer-start.sh   u:object_r:maru_init_exec:s0
 
 /data/maru(/.*)?                   u:object_r:maru_file:s0
 /cache/lxc(/.*)?                   u:object_r:maru_file:s0
