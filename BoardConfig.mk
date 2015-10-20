@@ -137,8 +137,9 @@ BOARD_SEPOLICY_UNION += \
 BOARD_SEPOLICY_UNION += \
        service.te \
        perspectived.te \
-       maru_init.te \
        mflinger.te \
+       mcprepare.te \
+       maru_init.te \
        maru_files.te \
        service_contexts
 
