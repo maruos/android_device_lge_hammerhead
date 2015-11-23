@@ -78,7 +78,9 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 TARGET_USES_ION := true
 
 # Enable dex-preoptimization to speed up first boot sequence
-WITH_DEXPREOPT := true
+ifeq ($(TARGET_BUILD_VARIANT),user)
+  WITH_DEXPREOPT := true
+endif
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 23068672
