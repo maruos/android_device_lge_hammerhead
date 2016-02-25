@@ -16,6 +16,7 @@
 #
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 $(call inherit-product-if-exists, device/lge/hammerhead/maru/device-maru.mk)
+$(call inherit-product-if-exists, vendor/maru/BoardConfigVendor.mk)
 
 PRODUCT_NAME := maru_hammerhead
 PRODUCT_MODEL := Maru on the Nexus 5 (beta)

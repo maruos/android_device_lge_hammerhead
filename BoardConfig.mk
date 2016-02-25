@@ -135,16 +135,6 @@ BOARD_SEPOLICY_UNION += \
        genfs_contexts \
        te_macros
 
-# maru: new selinux policies
-BOARD_SEPOLICY_UNION += \
-       service.te \
-       perspectived.te \
-       mflinger.te \
-       mcprepare.te \
-       maru_init.te \
-       maru_files.te \
-       service_contexts
-
 HAVE_ADRENO_SOURCE:= false
 
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so

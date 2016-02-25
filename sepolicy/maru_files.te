@@ -1,5 +1,0 @@
-# maru specific file types
-
-type maru_file, file_type;
-
-type busybox_exec, exec_type, file_type;
