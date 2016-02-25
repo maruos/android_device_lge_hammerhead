@@ -1,6 +1,6 @@
 #
 # Copyright 2016 Maru
-# Copyright 2013 The Android Open Source Project
+# Copyright 2013 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+$(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
+$(call inherit-product-if-exists, device/lge/hammerhead/maru/device-maru.mk)
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_hammerhead.mk \
-    $(LOCAL_DIR)/full_hammerhead.mk \
-    $(LOCAL_DIR)/car_hammerhead.mk
+PRODUCT_NAME := maru_hammerhead
+PRODUCT_MODEL := Maru on the Nexus 5 (beta)
 
-# maru
-PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/maru_hammerhead.mk
+PRODUCT_PACKAGES += \
+    Launcher3
+

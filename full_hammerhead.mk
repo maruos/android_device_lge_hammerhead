@@ -1,5 +1,4 @@
 #
-# Copyright 2015 Preetam D'Souza (maru)
 # Copyright 2013 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,11 +26,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 PRODUCT_NAME := full_hammerhead
 PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := Maru on the Nexus 5 (beta)
+PRODUCT_MODEL := AOSP on HammerHead
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := true
 
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
-
-$(call inherit-product-if-exists, device/lge/hammerhead/maru/device-maru.mk)
