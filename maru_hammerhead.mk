@@ -15,12 +15,19 @@
 # limitations under the License.
 #
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
-$(call inherit-product-if-exists, device/lge/hammerhead/maru/device-maru.mk)
+$(call inherit-product-if-exists, vendor/maru/device-maru.mk)
 $(call inherit-product-if-exists, vendor/maru/BoardConfigVendor.mk)
 
 PRODUCT_NAME := maru_hammerhead
 PRODUCT_MODEL := Maru on the Nexus 5 (beta)
 
+# allow /vendor/maru files
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
 PRODUCT_PACKAGES += \
     Launcher3
 
+DEVICE_PACKAGE_OVERLAYS += \
+    device/lge/hammerhead/overlay_maru/location \
+    device/lge/hammerhead/overlay_maru/apps \
+    device/lge/hammerhead/overlay_maru/daydream
