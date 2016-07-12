@@ -15,13 +15,13 @@
 # limitations under the License.
 #
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
-$(call inherit-product-if-exists, vendor/maru/device-maru.mk)
-$(call inherit-product-if-exists, vendor/maru/BoardConfigVendor.mk)
+$(call inherit-product, vendor/maruos/device-maru.mk)
+$(call inherit-product, vendor/maruos/BoardConfigVendor.mk)
 
 PRODUCT_NAME := maru_hammerhead
 PRODUCT_MODEL := Maru on the Nexus 5 (beta)
 
-# allow /vendor/maru files
+# allow /vendor/maruos files
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_PACKAGES += \

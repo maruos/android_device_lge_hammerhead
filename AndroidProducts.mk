@@ -21,6 +21,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_hammerhead.mk \
     $(LOCAL_DIR)/car_hammerhead.mk
 
-# maru
 PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/maru_hammerhead.mk
