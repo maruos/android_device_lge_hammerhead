@@ -1,4 +1,1 @@
-Maru on hammerhead (Nexus 5)!
---------------------
-
-All hammerhead-specific changes go here.
+# Maru OS on hammerhead (Nexus 5)!
