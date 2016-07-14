@@ -25,7 +25,8 @@ PRODUCT_MODEL := Maru on the Nexus 5 (beta)
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
+	TimeService
 
 DEVICE_PACKAGE_OVERLAYS += \
     device/lge/hammerhead/overlay_maru/location \
