@@ -18,18 +18,8 @@
 -->
 <favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
     <!-- First screen [0] -->
-    <favorite
-        launcher:packageName="com.android.gallery3d"
-        launcher:className="com.android.gallery3d.app.Gallery"
-        launcher:screen="0"
-        launcher:x="1"
-        launcher:y="3" />
-    <favorite
-        launcher:packageName="com.android.settings"
-        launcher:className="com.android.settings.Settings"
-        launcher:screen="0"
-        launcher:x="2"
-        launcher:y="3" />
+
+    <!-- empty -->
 
     <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
     <!-- Dialer, Camera, [All Apps], Messaging, Browser -->
