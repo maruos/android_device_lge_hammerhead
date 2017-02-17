@@ -28,7 +28,7 @@ else
 ifneq ($(filter hammerhead_fp aosp_hammerhead_fp,$(TARGET_PRODUCT)),)
 LOCAL_KERNEL := device/lge/hammerhead_fp-kernel/zImage-dtb
 else
-LOCAL_KERNEL := device/lge/hammerhead-kernel/zImage-dtb
+LOCAL_KERNEL := out/target/product/hammerhead/obj/KERNEL_OBJ/arch/arm/boot/zImage-dtb
 endif
 
 endif
