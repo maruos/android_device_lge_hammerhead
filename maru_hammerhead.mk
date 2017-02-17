@@ -35,3 +35,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # pick native mode tweak is supported on hammerhead
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.m.hdmi.try_native_mode=0
+
+# in-tree kernel build options
+KERNEL_DEFCONFIG := maru-hammerhead_defconfig
