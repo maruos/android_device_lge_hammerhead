@@ -1,5 +1,7 @@
 #
 # Copyright 2013 The Android Open Source Project
+# Copyright 2015-2016 Preetam J. D'Souza
+# Copyright 2016 The Maru OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,3 +19,6 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_hammerhead.mk \
     $(LOCAL_DIR)/full_hammerhead.mk
+
+PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/maru_hammerhead.mk

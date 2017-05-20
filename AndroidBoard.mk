@@ -1,7 +1,5 @@
 #
-# Copyright 2013 The Android Open Source Project
-# Copyright 2015-2016 Preetam J. D'Souza
-# Copyright 2016 The Maru OS Project
+# Copyright 2017 The Maru OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+LOCAL_PATH := $(call my-dir)
 
-add_lunch_combo maru_hammerhead-userdebug
-add_lunch_combo maru_hammerhead-user
+# Hook into the LineageOS in-tree kernel builds.
+TARGET_KERNEL_SOURCE := kernel/hammerhead
+TARGET_KERNEL_CONFIG := maru-hammerhead_defconfig
+
+# Hammerhead kernel only builds with GCC 4.8
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+

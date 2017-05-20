@@ -95,10 +95,6 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 734003200
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# Define kernel config for inline building
-TARGET_KERNEL_CONFIG := lineageos_hammerhead_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 TARGET_RECOVERY_FSTAB = device/lge/hammerhead/fstab.hammerhead
