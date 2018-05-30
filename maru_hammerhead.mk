@@ -14,19 +14,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
+
+# -----------------------------------------------------------------------------
+# Include LineageOS stuff
+
+$(call inherit-product, device/lge/hammerhead/lineage.mk)
+
+# Lineage's sepolicy must be explicitly added for non "lineage_*" products
+$(call inherit-product, vendor/cm/sepolicy/sepolicy.mk)
+
+# -----------------------------------------------------------------------------
+# Include Maru stuff
+
 $(call inherit-product, vendor/maruos/device-maru.mk)
 $(call inherit-product, vendor/maruos/BoardConfigVendor.mk)
 
-# Include LineageOS stuff
-$(call inherit-product, vendor/cm/sepolicy/sepolicy.mk)
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
 PRODUCT_NAME := maru_hammerhead
 PRODUCT_MODEL := Maru on the Nexus 5
-
-# allow /vendor/maruos files
-PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_PACKAGES += \
     Launcher3
