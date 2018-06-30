@@ -32,9 +32,6 @@ $(call inherit-product, vendor/maruos/BoardConfigVendor.mk)
 PRODUCT_NAME := maru_hammerhead
 PRODUCT_MODEL := Maru on the Nexus 5
 
-PRODUCT_PACKAGES += \
-    Launcher3
-
 DEVICE_PACKAGE_OVERLAYS += \
     device/lge/hammerhead/overlay_maru/location \
     device/lge/hammerhead/overlay_maru/apps \
