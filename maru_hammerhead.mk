@@ -34,7 +34,6 @@ PRODUCT_MODEL := Maru on the Nexus 5
 
 DEVICE_PACKAGE_OVERLAYS += \
     device/lge/hammerhead/overlay_maru/location \
-    device/lge/hammerhead/overlay_maru/apps \
     device/lge/hammerhead/overlay_maru/daydream
 
 # pick native mode tweak is supported on hammerhead
