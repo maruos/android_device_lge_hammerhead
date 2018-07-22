@@ -20,9 +20,6 @@
 
 $(call inherit-product, device/lge/hammerhead/lineage.mk)
 
-# Lineage's sepolicy must be explicitly added for non "lineage_*" products
-$(call inherit-product, vendor/cm/sepolicy/sepolicy.mk)
-
 # -----------------------------------------------------------------------------
 # Include Maru stuff
 
