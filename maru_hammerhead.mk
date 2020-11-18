@@ -1,5 +1,4 @@
 #
-# Copyright 2013 The Android Open Source Project
 # Copyright 2015-2016 Preetam J. D'Souza
 # Copyright 2016 The Maru OS Project
 #
@@ -7,7 +6,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#    http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,4 +15,16 @@
 # limitations under the License.
 #
 
-add_lunch_combo maru_hammerhead-userdebug
+# -----------------------------------------------------------------------------
+# Include LineageOS stuff
+
+$(call inherit-product, device/lge/hammerhead/lineage_hammerhead.mk)
+
+# -----------------------------------------------------------------------------
+# Include Maru stuff
+
+$(call inherit-product, vendor/maruos/device-maru.mk)
+$(call inherit-product, vendor/maruos/BoardConfigVendor.mk)
+
+PRODUCT_NAME := maru_hammerhead
+PRODUCT_MODEL := Maru on the Nexus 5

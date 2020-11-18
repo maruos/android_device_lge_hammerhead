@@ -101,7 +101,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := lineageos_hammerhead_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_SOURCE := kernel/hammerhead
 
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
