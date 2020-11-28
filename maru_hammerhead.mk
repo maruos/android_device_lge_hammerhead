@@ -26,5 +26,6 @@ $(call inherit-product, device/lge/hammerhead/lineage_hammerhead.mk)
 $(call inherit-product, vendor/maruos/device-maru.mk)
 $(call inherit-product, vendor/maruos/BoardConfigVendor.mk)
 
+WITH_DEXPREOPT := false
 PRODUCT_NAME := maru_hammerhead
 PRODUCT_MODEL := Maru on the Nexus 5
